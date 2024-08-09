@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable JS by Firoz Ansari</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* style for draggable element */
+        #myDraggleElement {
+          background-color: #3cefa2;
+          padding: 5px;
+          border: 1px solid #d3d3d3;
+          width: 200px;
+          text-align: center;
+        }
+        </style>
+        
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container-fluid mt-5">
+        <!-- Dragable Container start -->
+        <div id="myDraggleElement"> Drag Me </div>
+        <!-- Dragable Container end -->
+
+        <div class="row">
+            <div class="col">
+                <h1>Welcome to FDraggable.js</h1>
+                <h2>Try FDraggle.js and give you're suggention. If you've any idea in your mind, you can show in this repository.</h2>
+                <p class="lead">
+                    This page showcases a draggle feature implementation developed by Firoz.
+                </p>
+                <p>Drag will work properly if parent element has fixed width and height.By Defatlt parent element will set position:relative; and givenet element will be set position:absolute;</p>
+                <h1 id="feature-title"># DraggableJS</h1>
+                <p id="feature-description">MAKE YOUR HTML ELEMENT DRAGGABLE WITH SIMPLE STEPS.</p>
+        
+                <ol>
+                    <li>ADD <strong>FDraggable.js</strong> file in your project directory.</li>
+                    <li>Create a separate file <strong>main.js</strong> (or with a preferred name) and include it in your project.</li>
+                    <li>
+                        <code>
+                        import { FDraggable } from './FDraggable.js'; <br>
+                        document.addEventListener('DOMContentLoaded', () => { <br>
+                            &emsp;const elementId = 'myDraggableElement'; // myDraggableElement - DRAGGABLE ELEMENT ID<br>
+                            &emsp;let myDraggable = new FDraggable(elementId);<br>
+                        });
+                        </code>
+                    </li>
+                </ol>
+                Sample URL to run - <code>http://localhost/DraggableJS/index.html</code>
+                <p>Don't forget to give a like!</p>
+
+                <h2>Connect with Firoz</h2>
+                <p>You can connect with Firoz on the following platforms:</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/firoz-a-b64bb4220/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/connectwithfiroz" target="_blank">GitHub</a></li>
+                    <li><a href="https://connectwithfiroz.github.io/ftoast-message-box/" target="_blank">Toast Component Demo</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script type="module" src="main.js"></script>
+<!-- OTHER JS FILE YOU CAN ADD -->
+</html>
