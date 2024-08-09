@@ -6,22 +6,37 @@
     <title>Draggable JS by Firoz Ansari</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* style for draggable element */
-        #myDraggleElement {
-          background-color: #3cefa2;
-          padding: 5px;
-          border: 1px solid #d3d3d3;
-          width: 200px;
-          text-align: center;
-        }
-        </style>
+    /* style for draggable element */
+    #myDraggleElement {
+    background-color: #d9ece4;
+    border: 1px solid #d3d3d3;
+    width: 200px;
+    text-align: center;
+    }
+    #myDraggleElementHeader{
+        background-color: #3cefa2;
+        padding: 0;
+
+    }
+    </style>
         
 </head>
 <body>
     <!-- Main Container -->
     <div class="container-fluid mt-5">
         <!-- Dragable Container start -->
-        <div id="myDraggleElement"> Drag Me </div>
+        <div id="myDraggleElement"> 
+            <div id="myDraggleElementHeader">Drag Me</div>
+            <div class="contentSection p-2">
+
+                <form action="" method="get">
+                    <input type="text" name="" id="" placeholder="Enter your name.">
+                    <input type="date" name="" id="" class="mt-2" >
+                    <input type="range" name="" id="">
+                    <button class="btn btn-success">Submit</button>
+                </form>
+            </div>
+        </div>
         <!-- Dragable Container end -->
 
         <div class="row">

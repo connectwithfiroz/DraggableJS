@@ -1,5 +1,8 @@
 import { FDraggable } from './FDraggable.js';
 document.addEventListener('DOMContentLoaded', () => {
-    const elementId = 'myDraggleElement'; // myDraggleElement - DRAGGLE ELEMENT ID
-    let myDraggable = new FDraggable(elementId);
+    const options = {
+        'elementId' : 'myDraggleElement', // myDraggleElement - DRAGGLE ELEMENT ID
+        'elementHeaderId' : 'myDraggleElementHeader'
+    }
+    let myDraggable = new FDraggable(options);
 });
