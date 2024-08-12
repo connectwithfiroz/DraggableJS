@@ -20,23 +20,6 @@ export class FDraggable {
         }else{
             alert('Invalid element ID Header passed. If elementName is - myElement then must be a header inside with name - myElementHeader');
         }
-        // if (document.getElementById(this.element.id + "header")) {
-        //     document.getElementById(this.element.id + "header").onmousedown = this.dragMouseDown.bind(this);
-        // } else {
-        //     this.element.onmousedown = this.dragMouseDown.bind(this);
-        // }
-        
-        // if (this.element) {
-        //     this.element.parentNode.style.position = 'relative';
-        //     this.element.style.transition = 'unset';
-        //     this.element.style.position = 'absolute';
-        //     this.element.style.zIndex = '999';
-        //     this.element.style.cursor = 'move';
-        //     this.element.onmousedown = this.dragMouseDown.bind(this);
-        // } else {
-        //     alert('Invalid element ID passed');
-        // }
-
         this.pos1 = 0;
         this.pos2 = 0;
         this.pos3 = 0;
